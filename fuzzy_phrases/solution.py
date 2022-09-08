@@ -39,8 +39,8 @@ def phrasel_search(P, Queries):
         return result
 
 if __name__ == "__main__":
-    with open('C:\\2022\JasonFile\jason50.json', 'r') as f:
-        result =[]
+    with open('50_points.json', 'r') as f:
+       
         sample_data = json.loads(f.read())
         P, Queries = sample_data['phrases'], sample_data['queries']
         returned_ans = phrasel_search(P, Queries)
